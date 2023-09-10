@@ -14,8 +14,7 @@ class GScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final firstRepository = context.read<FirstRepository>();
-    final repository = context.watch<Repository>();
-
+   
     return MultiBlocProvider(
       providers: [
         BlocProvider(
@@ -33,16 +32,6 @@ class GScreen extends StatelessWidget {
          return MultiBlocListener(
   listeners: [
     BlocListener<FirstArticleBloc, FirstArticleState>(
-      listener: (context, state) {
-        if (state is LoadingState) {
-          print("LoadingState occurred");
-        } else if (state is LoadedState) {
-          // وضعیت loaded رخ داده است، می‌توانید اقدامات مرتبط با آن را انجام دهید
-          print("LoadedState occurred");
-        }
-      },
-    ),
-       BlocListener<SecondBloc, SecondState>(
       listener: (context, state) {
         if (state is LoadingState) {
           print("LoadingState occurred");
@@ -85,7 +74,6 @@ class GScreen extends StatelessWidget {
     ],
   ),
 );
-
           },),
           // body: BlocBuilder<FirstArticleBloc, FirstArticleState>(
           //   builder: (context, state) {

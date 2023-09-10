@@ -44,23 +44,23 @@ dev_dependencies:
 
 
 
-flutter_gen:
-  integrations:
-    flutter_svg: true
+# flutter_gen:
+#   integrations:
+#     flutter_svg: true
 
-flutter:
-  uses-material-design: true
-  assets:
-    - assets/images/
+# flutter:
+#   uses-material-design: true
+#   assets:
+#     - assets/images/
 
 
-  fonts:
-    - family: dana
-      fonts:
-        - asset: assets/fonts/DANA-BOLD.ttf
-          weight: 700
-        - asset: assets/fonts/DANA-REGULAR.ttf
-          weight: 300
+  # fonts:
+  #   - family: dana
+  #     fonts:
+  #       - asset: assets/fonts/DANA-BOLD.ttf
+  #         weight: 700
+  #       - asset: assets/fonts/DANA-REGULAR.ttf
+  #         weight: 300
   #         style: italic
   #   - family: Trajan Pro
   #     fonts:
