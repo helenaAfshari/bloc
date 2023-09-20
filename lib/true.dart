@@ -5,7 +5,6 @@ import 'package:BlocAPi/bloc2/first_state.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'repository/repositorys.dart';
-import 'secondripo/bloc_second.dart';
 import 'secondripo/state_second.dart';
 
 class GScreen extends StatelessWidget {
@@ -23,7 +22,6 @@ class GScreen extends StatelessWidget {
       ..add(LoadedEvent());
       },
           ),
-      
       ],
      
       child: SafeArea(

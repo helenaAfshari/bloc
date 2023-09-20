@@ -31,7 +31,6 @@ class Multi extends StatelessWidget {
         child: First(),
        create:  (context) => FirstRepository(),),
         
-      
 
     ],  child:GScreen(),
    
